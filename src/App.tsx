@@ -98,6 +98,14 @@ export default function App() {
             <button
               type="button"
               className="secondary-button"
+              disabled={state.past.length === 0}
+              onClick={() => dispatch({ type: 'undo' })}
+            >
+              <span aria-hidden="true">↶ </span>Undo
+            </button>
+            <button
+              type="button"
+              className="secondary-button"
               disabled={counts.done === 0}
               onClick={() => dispatch({ type: 'clearDone' })}
             >
