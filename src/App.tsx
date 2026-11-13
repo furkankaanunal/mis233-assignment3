@@ -15,7 +15,7 @@ function AddForm({ dispatch }: { dispatch: Dispatch<Action> }) {
     <form className="add-form" action={addTask}>
       <label htmlFor="task-title">New task</label>
       <div className="add-form-controls">
-        <input id="task-title" name="title" placeholder="What needs to be done?" required />
+        <input id="task-title" name="title" placeholder="e.g. Review notes" required />
         <button type="submit" className="add-button">
           <span aria-hidden="true">+</span> Add
         </button>

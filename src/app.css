@@ -515,7 +515,36 @@ h1 {
     padding: 12px;
   }
 
+  .task-title {
+    align-items: flex-start;
+  }
+
+  .task-indicator {
+    margin-top: 3px;
+  }
+
   .row-actions {
     grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 380px) {
+  .task-actions {
+    gap: 6px;
+  }
+
+  .secondary-button,
+  .filter-button {
+    padding-inline: 8px;
+    font-size: 13px;
+  }
+
+  .filter-button {
+    gap: 4px;
+  }
+
+  .filter-count {
+    min-width: 20px;
+    min-height: 20px;
   }
 }
